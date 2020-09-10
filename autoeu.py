@@ -58,7 +58,7 @@ def newAccount():
 
     py.write(text1, interval=0.1)
     time.sleep(1)
-    py.keyDown('tab')
+    py.press('tab')
 
     #CONFIRMAR E-MAIL
     py.write(text0, interval=0.1)
@@ -70,14 +70,14 @@ def newAccount():
 
     py.write(text1, interval=0.1)
     time.sleep(1)
-    py.keyDown('tab')
+    py.press('tab')
 
     #escribir CONTRASEÑA
     py.write('Ab1234567*', interval=0.1)
-    py.keyDown('tab')
+    py.press('tab')
     #confirmar CONTRASEÑA
     py.write('Ab1234567*')
-    py.keyDown('tab')
+    py.press('tab')
     #mover a condición(1)
     py.moveTo(372, 572)
     time.sleep(1)
@@ -189,7 +189,7 @@ def resetPass():
     time.sleep(1)
     #escribir CONTRASEÑA
     py.write('Ab1234567*', interval=0.1)
-    py.keyDown('tab')
+    py.press('tab')
     #confirmar CONTRASEÑA
     py.write('Ab1234567*')
     time.sleep(1)
@@ -216,13 +216,13 @@ def modPass():
     py.click()
     #escribir contraseña actual
     py.write('Ab1234567*', interval=0.1)
-    py.keyDown('tab')
+    py.press('tab')
     #escribir nueva contraseña
     py.write('Ab1234567*', interval=0.1)
-    py.keyDown('tab')
+    py.press('tab')
     #confirmar nueva contraseña
     py.write('Ab1234567*', interval=0.1)
-    py.keyDown('tab')
+    py.press('tab')
     time.sleep(1)
     #mover a MODIFICAR CONTRASEÑA
     py.moveTo(750, 568)
